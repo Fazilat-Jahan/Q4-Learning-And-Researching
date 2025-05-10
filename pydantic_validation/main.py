@@ -25,7 +25,6 @@ class Response(BaseModel):
      reply: str
      metadata: Metadata     
 
-
 @app.get("/")
 async def root():
     return {"message": "Welcome to the DACA chatbot API!"}
