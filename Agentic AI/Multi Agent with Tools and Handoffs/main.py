@@ -50,11 +50,18 @@ async def main():
   
     result = await Runner.run(main_agent,
                               """
-                              
+                               1. What is my current location?
+                               2. What is the latest breaking news?
                                3. What is photosynthesis?
                                """,
                                run_config=config
                                )
+        # result = await Runner.run(main_agent,
+        #                       """
+        #                        3. What is photosynthesis?
+        #                        """,
+        #                        run_config=config
+        #                        )
     
     print('='*80)
     print("Result:", result.last_agent.name, "\n")
